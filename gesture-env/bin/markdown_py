@@ -1,6 +1,0 @@
-#!/home/panu/Documents/fibo/project_yolov8x-tuned-hand-gestures/hand-gesture-recognition-mediapipe/gesture-env/bin/python
-import sys
-from markdown.__main__ import run
-if __name__ == '__main__':
-    sys.argv[0] = sys.argv[0].removesuffix('.exe')
-    sys.exit(run())
