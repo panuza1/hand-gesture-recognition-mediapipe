@@ -1,0 +1,14 @@
+# Core Libraries
+opencv-python==4.8.1.78
+mediapipe==0.10.9
+numpy==1.23.5
+
+# GUI & Tools
+matplotlib==3.7.1
+scikit-learn==1.3.0
+pandas==2.0.3
+
+# สำหรับจัดการหน้าจอและระบบ (ถ้ามีใช้)
+pynput==1.7.6
+
+tensorflow==2.13.0
