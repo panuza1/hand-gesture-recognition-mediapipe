@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-app.py  —  Two-Hand Gesture Recognition
-ต่อยอดจาก: https://github.com/kinivi/hand-gesture-recognition-mediapipe
 
 การเปลี่ยนแปลงจาก repo เดิม:
   - max_num_hands=2
@@ -41,7 +39,7 @@ def get_args():
 
 
 # ─────────────────────────────────────────────
-# Landmark helpers  (เหมือน repo เดิมทุกอย่าง)
+# Landmark helpers  
 # ─────────────────────────────────────────────
 def calc_landmark_list(image, landmarks):
     h, w = image.shape[:2]
@@ -138,7 +136,7 @@ def draw_mode_info(image, mode, number):
 
 
 # ─────────────────────────────────────────────
-# Data logging  (เหมือน repo เดิม)
+# Data logging 
 # ─────────────────────────────────────────────
 def logging_csv(number, landmark_list):
     if number < 0:
@@ -162,7 +160,7 @@ def main():
     mp_hands_module = mp.solutions.hands
     hands = mp_hands_module.Hands(
         static_image_mode=False,
-        max_num_hands=2,                              # ← เปลี่ยนจาก 1 เป็น 2
+        max_num_hands=2,                             
         min_detection_confidence=args.min_detection_confidence,
         min_tracking_confidence=args.min_tracking_confidence,
     )
